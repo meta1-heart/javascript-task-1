@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Пятый элемент</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <p>
+        Здесь параграф, йоу. А ниже код.
+    </p>>
+    <code>
+        function romanTime(time) {
+            // проверяем формат времени
+            let valid = /^([0-1][0-9]|[2][0-3]):([0-5][0-9])$/;
+            if (!valid.test(time)) {
+                throw new TypeError('Неверное время', 'roman-time.js');
+            }
+            time = hoursToRoman(time) + ':' + minutesToRoman(time);
+        
+            return time;
+        }
+    </code>
+    <table>
+        <tr>
+            <td>Английское слово</td>>
+            <td>Русское слово</td>>
+        </tr>>
+        <tr>
+            <td>Hello!</td>>
+            <td>Привет!</td>>
+        </tr>>
+    </table>>
+    <ol>
+        <li>Я всегда прав</li>>
+        <li>Если я не прав, смотри пункт 1</li>>
+    </ol>>
+    <button>Нажми меня ;)</button>
+</body>
+</html>
